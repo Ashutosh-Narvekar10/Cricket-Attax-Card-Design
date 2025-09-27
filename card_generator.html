@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card generator - Cricket Attax Cards</title>
+    <link rel="stylesheet" href="card_generator.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <h1>CARD GENERATOR</h1>
+        <form action="/submit" method="post">
+            <div>
+                <label for="Name">PLAYER NAME</label>
+                <input type="text" id="name" name="name" placeholder="Enter the players name">
+            </div>
+            <div>
+                <label for="role">SPECIALITY</label>
+                <input type="text" id="specialty" placeholder="Enter the player's speciality" required>
+            </div>
+            <div>
+                <label for="emoji">RATING</label>
+                <input type="number" id="emoji" min="1" max="5" placeholder="Enter player rating 1-5" required>
+            </div>
+            <div>
+                <label for="image">PLAYER IMAGE</label>
+                <input type="url" id="image" placeholder="Paste player image url here" required>
+            </div>
+            <div>
+                <label for="team">IPL TEAM IMAGE</label>
+                <input type="url" id="team" placeholder=" Paste team image url here" required>
+            </div>
+            <div>
+                <label for="points">FANTASY LEAGUE POINTS</label>
+                <input type="text" id="points" placeholder="Enter the player's fantasy league points" required>
+            </div>
+            <div>
+                <label for="countryInput">COUNTRY</label>
+                <input type="text" id="country" placeholder="Enter country name (e.g. India)" required>
+            </div>
+            <div>
+                <label for="match">MATCHES</label>
+                <input type="number" id="match" placeholder="Enter the number of matches player played" required>
+            </div>
+            <div>
+                <label for="runs">T20I RUNS</label>
+                <input type="text" id="runs" placeholder="Enter the player's T20 International runs" required>
+            </div>
+            <div>
+                <label for="score">HIGHEST SCORE</label>
+                <input type="number" id="score" placeholder="Enter the player's highest score" required>
+            </div>
+            <div>
+                <label for="wickets">WICKETS</label>
+                <input type="number" id="wickets" placeholder="Enter the number of wickets player has taken" required>
+            </div>
+            <div>
+                <label for="avg">BATTING AVERAGE</label>
+                <input type="number" id="avg" placeholder="Enter the player's batting average" required>
+            </div>
+            <div>
+                <label for="average">BOWLING AVERAGE</label>
+                <input type="number" id="average" placeholder="Enter the player's bowling average" required>
+            </div>
+            <div>
+                <button type="button" onclick="generateCard()">GENERATE CARD</button>
+            </div>
+            
+        </form>
+    </div>
+    
+<div class="background">
+    <div id="cardContainer" class="block1">
+    
+        <div class="block2">
+            <div class="block3">
+                <h4 id="playerName"> </h4>
+            </div>
+            <div class="block4">
+                <h4 id="playerspeciality"></h4>
+            </div>
+            <div class="block5">
+                <h4 id="playerRatings"></h4>
+            </div>
+            <div class="block6">
+                <img id="playerimage" src="" class="glow">
+            </div>
+            <div class="block7">
+                <img id="teamimage" src="" class="glow1">
+            </div>
+            <div class="block8">
+                <h5>FANTASY LEAGUE</h5>
+            </div>
+            <div class="block9">
+                <h5 id="fantasypoints"></h5>
+            </div>
+            <div class="block10">
+                <h6 id="matchesplayed"></h6>
+            </div>
+            <div class="block11">
+                <h6 id="wicketstaken"></h6>
+            </div>
+            <div class="block12">
+                <h2 id="bowlingavg"></h2>
+            </div>
+            <div class="block13">
+                <h4>BOWLING AVG</h4>
+            </div>
+            <div class="block14">
+                <img id="countryimage" src="">
+            </div>
+            <div class="block15">
+                <h6 id="totalruns"></h6>
+            </div>
+            <div class="block16">
+                <h6 id="highscore"></h6>
+            </div>
+            <div class="block17">
+                <h2 id="battingavg"></h2>
+            </div>
+            <div class="block18">
+                <h4>BATTING AVG</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="card_generator.js"></script>
+</body>
+
+</html>
