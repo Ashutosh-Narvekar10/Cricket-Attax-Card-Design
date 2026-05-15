@@ -1,7 +1,8 @@
  Cricket-Attax-Card-Design
-
+<p>
 Hi Guys! 
 As a cricket enthusiast, I have designed a card generator website as my first web development project using HTML, CSS and JS. I have listed down the features of my project.
+ </p>
 ---
 ##  Features
 - Custom Card Creation : Users can enter player details (name, specialty, stats, etc.) and generate a personalized card.
