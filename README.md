@@ -13,7 +13,7 @@ As a cricket enthusiast, I have designed a card generator website as my first we
 - Fantasy Points & Stats Display : Shows key player stats like matches, runs, wickets, averages, etc. on the card.
 - Background Removal : Player images can have backgrounds removed using the Remove.bg API.
 - Error Handling : Alerts if invalid country names are entered or if background removal fails, with fallbacks.
-
+<br>
 <img width="290" height="393" alt="Output" src="https://github.com/user-attachments/assets/c50b0ebd-8d58-4fa3-8b31-1cf094e6db59" />
 
 <img width="1366" height="668" alt="PIC1" src="https://github.com/user-attachments/assets/d7f5ddba-b7d8-4476-9b2c-068221a9a7ec" />
