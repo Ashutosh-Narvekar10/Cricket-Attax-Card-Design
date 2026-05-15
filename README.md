@@ -5,6 +5,7 @@ As a cricket enthusiast, I have designed a card generator website as my first we
  </p>
 ---
 ##  Features
+<br>
 - Custom Card Creation : Users can enter player details (name, specialty, stats, etc.) and generate a personalized card.
 - Country Flag Integration : Automatically fetches and displays the player’s country flag using the REST Countries API.
 - Star Rating System : User inputs a number, and the card shows that many ⭐ stars dynamically.
